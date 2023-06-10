@@ -8,10 +8,10 @@ Use the data to complete the following tasks in medical_data_visualizer.py:
 2) Normalize the data by making 0 always good and 1 always bad. If the value of cholesterol or gluc is 1, make the value 0. If the value is more than 1, make the value 1.  
 3) Convert the data into long format and create a chart that shows the value counts of the categorical features using seaborn's catplot(). The dataset should be split by 'Cardio' so there is one chart for each cardio value.  
 4) Clean the data. Filter out the following patient segments that represent incorrect data:  
-      diastolic pressure is higher than systolic (Keep the correct data with (df['ap_lo'] <= df['ap_hi']))   
-      height is less than the 2.5th percentile (Keep the correct data with (df['height'] >= df['height'].quantile(0.025)))  
-      height is more than the 97.5th percentile  
-      weight is less than the 2.5th percentile  
-      weight is more than the 97.5th percentile   
+     i) diastolic pressure is higher than systolic (Keep the correct data with (df['ap_lo'] <= df['ap_hi']))   
+     ii) height is less than the 2.5th percentile (Keep the correct data with (df['height'] >= df['height'].quantile(0.025)))  
+     iii) height is more than the 97.5th percentile  
+     iv) weight is less than the 2.5th percentile  
+     v) weight is more than the 97.5th percentile   
 5) Create a correlation matrix using the dataset. Plot the correlation matrix using seaborn's heatmap(). Mask the upper triangle.  
 6) 
